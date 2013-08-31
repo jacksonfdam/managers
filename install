@@ -1,28 +1,27 @@
 # Shell Script for Initialize copy of manager files
 
+clear
+MANAGERS_TARBALL_PATH="https://github.com/vitorbritto/managers/tarball/master"
 
 # Ask for the administrator password upfront
 sudo -v
-clear
+
+# Download and extract the managers repository
 printf "\n"
 printf "You need to create a folder to continue... \n"
 printf "\n"
-read -p "Type a name for your new folder: " newfolder
-mkdir $newfolder && cd $newfolder
+read -p "Type a name for your new folder: " MANAGERS_DIRECTORY
+mkdir $MANAGERS_DIRECTORY
 
-MANAGERS_TARBALL_PATH="https://github.com/vitorbritto/managers/tarball/master"
-MANAGERS_GIT_REMOTE="https://github.com/vitorbritto/managers"
+# Get the tarball
+printf "$(tput setaf 7)Downloading managers...\033[m\n"
+curl -fsSLo ${MANAGERS_DIRECTORY}/managers.tar.gz ${MANAGERS_TARBALL_PATH}
+# Extract to the managers directory
+tar -zxf ${MANAGERS_DIRECTORY}/managers.tar.gz --strip-components 1 -C ${MANAGERS_DIRECTORY}
+# Remove the tarball
+rm -rf ${MANAGERS_DIRECTORY}/managers.tar.gz
 
-# If missing, download and extract the managers repository
-if [[ ! -d $newfolder ]]; then
-    printf "$(tput setaf 7)Downloading managers...\033[m\n"
-    # Get the tarball
-    curl -fsSLo $newfolder/managers.tar.gz ${MANAGERS_TARBALL_PATH}
-    # Extract to the managers directory
-    tar -zxf $newfolder/managers.tar.gz --strip-components 1 -C $newfolder
-    # Remove the tarball
-    rm -rf $newfolder/managers.tar.gz
-fi
+cd ${MANAGERS_DIRECTORY}
 
 
 # Let's start with some settings
