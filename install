@@ -1,0 +1,95 @@
+# Shell Script for Initialize copy of manager files
+
+
+# Ask for the administrator password upfront
+sudo -v
+clear
+printf "\n"
+printf "You need to create a folder to continue... \n"
+printf "\n"
+read -p "Type a name for your new folder: " MANAGERS_DIRECTORY
+
+cd ${MANAGERS_DIRECTORY}
+
+MANAGERS_TARBALL_PATH="https://github.com/vitorbritto/managers/tarball/master"
+MANAGERS_GIT_REMOTE="https://github.com/vitorbritto/managers"
+
+# If missing, download and extract the managers repository
+if [[ ! -d ${MANAGERS_DIRECTORY} ]]; then
+    printf "$(tput setaf 7)Downloading managers...\033[m\n"
+    # Get the tarball
+    curl -fsSLo ${MANAGERS_DIRECTORY}/managers.tar.gz ${MANAGERS_TARBALL_PATH}
+    # Extract to the managers directory
+    tar -zxf ${MANAGERS_DIRECTORY}/managers.tar.gz --strip-components 1 -C ${MANAGERS_DIRECTORY}
+    # Remove the tarball
+    rm -rf ${MANAGERS_DIRECTORY}/managers.tar.gz
+fi
+
+
+# Let's start with some settings
+printf "\n"
+printf "Select an integration option to getting started: \n"
+printf "\n"
+printf "[ 1 ] - Bower \n"
+printf "[ 2 ] - Grunt \n"
+printf "[ 3 ] - Compass \n"
+printf "[ 4 ] - Composer \n"
+printf "[ 5 ] - DocPad \n"
+printf "[ 6 ] - Jekyll \n"
+printf "[ 7 ] - Rails \n"
+printf "[ 0 ] - Exit \n"
+printf "\n"
+read -p "Enter your choice: " input
+
+if [ $input = "1" ]; then
+    # testing...
+    printf "Bower!"
+fi
+
+if [ $input = "2" ]; then
+    # testing...
+    printf "Grunt!"
+fi
+
+if [ $input = "3" ]; then
+    # testing...
+    printf "Compass!"
+fi
+
+if [ $input = "4" ]; then
+    # testing...
+    printf "Composer!"
+fi
+
+if [ $input = "5" ]; then
+    # testing...
+    printf "DocPad!"
+fi
+
+if [ $input = "6" ]; then
+    # testing...
+    printf "Jekyll!"
+fi
+
+if [ $input = "7" ]; then
+    # testing...
+    printf "Rails!"
+fi
+
+if [ $input = "0" ]; then
+    printf "Bye bye!"
+    exit
+fi
+
+
+# ====================================================
+#  TODO - TEST PROJECTS
+# ====================================================
+
+# Bower ✔
+# Grunt ✔
+# Jekyll ✔
+# Compass ✔
+# Composer
+# DocPad
+# Rails
