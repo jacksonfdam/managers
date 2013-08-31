@@ -7,9 +7,10 @@ clear
 printf "\n"
 printf "You need to create a folder to continue... \n"
 printf "\n"
-read -p "Type a name for your new folder: " MANAGERS_DIRECTORY
-mkdir ${MANAGERS_DIRECTORY} && cd ${MANAGERS_DIRECTORY}
+read -p "Type a name for your new folder: " newfolder
+mkdir $newfolder && cd $newfolder
 
+MANAGERS_DIRECTORY=newfolder
 MANAGERS_TARBALL_PATH="https://github.com/vitorbritto/managers/tarball/master"
 MANAGERS_GIT_REMOTE="https://github.com/vitorbritto/managers"
 
