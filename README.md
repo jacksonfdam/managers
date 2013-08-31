@@ -11,6 +11,9 @@ Some files related to these tools, are in a folder called `./src`. I have this h
 
 > So far, only been tested on OSX.
 
+1. Open your terminal and go to the root folder of your project
+2. Execute:
+
 ```bash
 $ bash -c "$(curl -fsSL raw.github.com/vitorbritto/managers/master/install)"
 ```
