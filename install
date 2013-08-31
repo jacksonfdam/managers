@@ -10,19 +10,18 @@ printf "\n"
 read -p "Type a name for your new folder: " newfolder
 mkdir $newfolder && cd $newfolder
 
-MANAGERS_DIRECTORY=newfolder
 MANAGERS_TARBALL_PATH="https://github.com/vitorbritto/managers/tarball/master"
 MANAGERS_GIT_REMOTE="https://github.com/vitorbritto/managers"
 
 # If missing, download and extract the managers repository
-if [[ ! -d ${MANAGERS_DIRECTORY} ]]; then
+if [[ ! -d $newfolder ]]; then
     printf "$(tput setaf 7)Downloading managers...\033[m\n"
     # Get the tarball
-    curl -fsSLo ${MANAGERS_DIRECTORY}/managers.tar.gz ${MANAGERS_TARBALL_PATH}
+    curl -fsSLo $newfolder/managers.tar.gz ${MANAGERS_TARBALL_PATH}
     # Extract to the managers directory
-    tar -zxf ${MANAGERS_DIRECTORY}/managers.tar.gz --strip-components 1 -C ${MANAGERS_DIRECTORY}
+    tar -zxf $newfolder/managers.tar.gz --strip-components 1 -C $newfolder
     # Remove the tarball
-    rm -rf ${MANAGERS_DIRECTORY}/managers.tar.gz
+    rm -rf $newfolder/managers.tar.gz
 fi
 
 
