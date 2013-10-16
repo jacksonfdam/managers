@@ -1,0 +1,27 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "title": "Project Title",
+  "homepage": "www.project.com",
+  "description": "Some description.",
+  "author": {
+    "name": "Vitor Britto",
+    "url": "http://www.vitorbritto.com",
+    "email": "email@domain.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vitorbritto/managers.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-bower-requirejs": "~0.7.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-usemin": "~0.1.10",
+    "load-grunt-tasks": "~0.1.0",
+    "time-grunt": "~0.1.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "title": "Project Title",
+  "homepage": "www.project.com",
+  "description": "Some description.",
+  "author": {
+    "name": "Vitor Britto",
+    "url": "http://www.vitorbritto.com",
+    "email": "email@domain.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vitorbritto/managers.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "load-grunt-tasks": "~0.1.0",
+    "grunt-sftp-deploy": "0.0.9"
+  }
+}

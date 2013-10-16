@@ -6,8 +6,8 @@
   "description": "Some description.",
   "author": {
     "name": "Vitor Britto",
-    "url": "http://www.vitorbritto.com.br",
-    "email": "code[at]vitorbritto.com.br"
+    "url": "http://www.vitorbritto.com",
+    "email": "email@domain.com"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,7 @@
     "grunt-contrib-watch": "~0.4.3",
     "grunt-contrib-compass": "~0.2.0",
     "grunt-contrib-jshint": "~0.5.4",
-    "grunt-contrib-imagemin": "~0.1.4",
-    "grunt-ftp-deploy": "0.0.9",
-    "load-grunt-tasks": "~0.1.0"
+    "load-grunt-tasks": "~0.1.0",
+    "grunt-contrib-connect": "~0.5.0"
   }
 }
