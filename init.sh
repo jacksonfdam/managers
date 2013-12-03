@@ -38,7 +38,7 @@ if [ $input = "1" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install GRUNT COMPASS COMPOSER NPM RAKE MAKE
+    rm -rf .* README.md init.sh ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # Everything is ok!
     printf "Ready to rock with Bower!"
@@ -53,7 +53,7 @@ if [ $input = "2" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install BOWER COMPASS COMPOSER NPM RAKE MAKE
+    rm -rf .* README.md init.sh ${BOWER} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # Everything is ok!
     printf "Ready to rock with Grunt!"
@@ -68,7 +68,7 @@ if [ $input = "3" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install BOWER GRUNT COMPOSER NPM RAKE MAKE
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # Everything is ok!
     printf "Ready to rock with Compass!"
@@ -83,7 +83,7 @@ if [ $input = "4" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install BOWER GRUNT COMPASS NPM RAKE MAKE
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${NPM} ${RAKE} ${MAKE}
 
     # Everything is ok!
     printf "Ready to rock with Composer!"
@@ -98,7 +98,7 @@ if [ $input = "5" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install BOWER GRUNT COMPASS RAKE MAKE
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${COMPASS} ${RAKE} ${MAKE}
 
     # Everything is ok!
     printf "Ready to rock with NPM!"
@@ -113,7 +113,7 @@ if [ $input = "6" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install BOWER GRUNT COMPASS NPM MAKE
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${NPM} ${COMPASS} ${MAKE}
 
     # Everything is ok!
     printf "Ready to rock with Rake!"
@@ -128,7 +128,7 @@ if [ $input = "7" ]; then
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
-    rm -dr .* README.md install BOWER GRUNT COMPASS NPM RAKE
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${NPM} ${COMPASS} ${RAKE}
 
     # Everything is ok!
     printf "Ready to rock with Make!"
