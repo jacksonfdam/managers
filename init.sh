@@ -4,7 +4,6 @@
 # Let's start with some settings
 clear
 
-DIST="./src"
 BOWER="./bower"
 GRUNT="./grunt"
 COMPASS="./compass"
@@ -34,7 +33,7 @@ if [ $input = "1" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./bower/* ${DIST}
+    cp ./bower/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -49,7 +48,7 @@ if [ $input = "2" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./grunt/* ${DIST}
+    cp ./grunt/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -64,7 +63,7 @@ if [ $input = "3" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./compass/* ${DIST}
+    cp ./compass/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -79,7 +78,7 @@ if [ $input = "4" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./composer/* ${DIST}
+    cp ./composer/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -94,7 +93,7 @@ if [ $input = "5" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./npm/* ${DIST}
+    cp ./npm/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -109,7 +108,7 @@ if [ $input = "6" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./rake/* ${DIST}
+    cp ./rake/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -124,7 +123,7 @@ if [ $input = "7" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./make/* ${DIST}
+    cp ./make/* ./src
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
