@@ -1,46 +1,21 @@
-# Shell Script for Initialize copy of manager files
+#!/bin/sh
 
+
+# Let's start with some settings
 clear
-MANAGERS_TARBALL_PATH="https://github.com/vitorbritto/managers/tarball/master"
-MANAGERS_SRC_DIRECTORY="${MANAGERS_DIRECTORY}/src"
 
-BOWER="${MANAGERS_DIRECTORY}/bower"
-GRUNT="${MANAGERS_DIRECTORY}/grunt"
-COMPASS="${MANAGERS_DIRECTORY}/compass"
-COMPOSER="${MANAGERS_DIRECTORY}/composer"
-RAKE="${MANAGERS_DIRECTORY}/rake"
-MAKE="${MANAGERS_DIRECTORY}/make"
+DIST="./src"
+BOWER="./bower"
+GRUNT="./grunt"
+COMPASS="./compass"
+COMPOSER="./composer"
+RAKE="./rake"
+MAKE="./make"
 
 # Ask for the administrator password upfront
 sudo -v
 
-# Download and extract the managers repository
-printf "\n"
-printf "You need to create a folder to continue... \n"
-printf "\n"
-read -p "Please, set a name to your folder: " MANAGERS_DIRECTORY
-mkdir $MANAGERS_DIRECTORY
-
-# Get the tarball
-printf "$(tput setaf 7)Downloading managers...\033[m\n"
-curl -fsSLo ${MANAGERS_DIRECTORY}/managers.tar.gz ${MANAGERS_TARBALL_PATH}
-
-# Extract to the managers directory
-tar -zxf ${MANAGERS_DIRECTORY}/managers.tar.gz --strip-components 1 -C ${MANAGERS_DIRECTORY}
-
-# Remove the tarball
-rm -rf ${MANAGERS_DIRECTORY}/managers.tar.gz
-
-# Go to created directory
-cd ${MANAGERS_DIRECTORY}
-
-# if do not have ./src folder create one
-if [[ ! -d ${MANAGERS_SRC_DIRECTORY} ]]; then
-    printf "$(tput setaf 7)Creating folder...\033[m\n"
-    mkdir -p src
-fi
-
-# Let's start with some settings
+# Show options
 printf "\n"
 printf "Select an integration option to getting started: \n"
 printf "\n"
@@ -59,7 +34,7 @@ if [ $input = "1" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/bower/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./bower/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -74,7 +49,7 @@ if [ $input = "2" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/grunt/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./grunt/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -89,7 +64,7 @@ if [ $input = "3" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/compass/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./compass/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -104,7 +79,7 @@ if [ $input = "4" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/composer/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./composer/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -119,7 +94,7 @@ if [ $input = "5" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/npm/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./npm/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -134,7 +109,7 @@ if [ $input = "6" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/rake/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./rake/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -149,7 +124,7 @@ if [ $input = "7" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ${MANAGERS_DIRECTORY}/make/* ${MANAGERS_SRC_DIRECTORY}
+    cp ./make/* ${DIST}
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
