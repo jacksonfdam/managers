@@ -38,7 +38,7 @@ if [ $input = "1" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./bower/* ./src/*
+    cp ./bower/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
@@ -57,7 +57,7 @@ if [ $input = "2" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./grunt/* ./src/*
+    cp ./grunt/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
@@ -76,7 +76,7 @@ if [ $input = "3" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./compass/* ./src/*
+    cp ./compass/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
@@ -95,7 +95,7 @@ if [ $input = "4" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./composer/* ./src/*
+    cp ./composer/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
@@ -114,7 +114,7 @@ if [ $input = "5" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./npm/* ./src/*
+    cp ./npm/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
@@ -133,7 +133,7 @@ if [ $input = "6" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./rake/* ./src/*
+    cp ./rake/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
@@ -152,7 +152,7 @@ if [ $input = "7" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./make/* ./src/*
+    cp ./make/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
