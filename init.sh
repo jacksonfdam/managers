@@ -8,6 +8,7 @@ BOWER="./bower"
 GRUNT="./grunt"
 COMPASS="./compass"
 COMPOSER="./composer"
+NPM="./npm"
 RAKE="./rake"
 MAKE="./make"
 
@@ -33,7 +34,7 @@ if [ $input = "1" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./bower/* ./src
+    cp ./bower/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -48,7 +49,7 @@ if [ $input = "2" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./grunt/* ./src
+    cp ./grunt/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -63,7 +64,7 @@ if [ $input = "3" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./compass/* ./src
+    cp ./compass/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -78,7 +79,7 @@ if [ $input = "4" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./composer/* ./src
+    cp ./composer/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -93,7 +94,7 @@ if [ $input = "5" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./npm/* ./src
+    cp ./npm/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -108,7 +109,7 @@ if [ $input = "6" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./rake/* ./src
+    cp ./rake/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
@@ -123,7 +124,7 @@ if [ $input = "7" ]; then
 
     # copy files to ./src folder
     printf "Copying files..."
-    cp ./make/* ./src
+    cp ./make/* ./src/
 
     # remove unecessary folders
     printf "Removing stuff you don't want..."
