@@ -33,137 +33,137 @@ read -p "Enter your choice: " input
 if [ $input = "1" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./bower/* ./src
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Bower!"
+    printf "Ready to rock with Bower!\n"
 
 fi
 
 if [ $input = "2" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./grunt/* ./src/
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Grunt!"
+    printf "Ready to rock with Grunt!\n"
 
 fi
 
 if [ $input = "3" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./compass/* ./src/
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Compass!"
+    printf "Ready to rock with Compass!\n"
 
 fi
 
 if [ $input = "4" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./composer/* ./src/
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Composer!"
+    printf "Ready to rock with Composer!\n"
 
 fi
 
 if [ $input = "5" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./npm/* ./src/
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with NPM!"
+    printf "Ready to rock with NPM!\n"
 
 fi
 
 if [ $input = "6" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./rake/* ./src/
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Rake!"
+    printf "Ready to rock with Rake!\n"
 
 fi
 
 if [ $input = "7" ]; then
 
     # create ./src directory
-    printf "Initializing structure..."
+    printf "Initializing structure...\n"
     mkdir ./src
 
     # copy files to ./src directory
-    printf "Copying files..."
+    printf "Copying files...\n"
     cp ./make/* ./src/
 
     # remove unecessary files
-    printf "Removing stuff you don't want..."
+    printf "Removing stuff you don't want...\n"
     rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Make!"
+    printf "Ready to rock with Make!\n"
 
 fi
 
 if [ $input = "0" ]; then
-    printf "Bye bye!"
+    printf "Bye bye!\n"
     exit
 fi
