@@ -42,7 +42,7 @@ if [ $input = "1" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Bower!\n"
@@ -61,7 +61,7 @@ if [ $input = "2" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Grunt!\n"
@@ -80,7 +80,7 @@ if [ $input = "3" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Compass!\n"
@@ -99,7 +99,7 @@ if [ $input = "4" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Composer!\n"
@@ -118,7 +118,7 @@ if [ $input = "5" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with NPM!\n"
@@ -137,7 +137,7 @@ if [ $input = "6" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Rake!\n"
@@ -156,7 +156,7 @@ if [ $input = "7" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Make!\n"
