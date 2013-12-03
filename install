@@ -8,9 +8,8 @@ BOWER="${MANAGERS_DIRECTORY}/bower"
 GRUNT="${MANAGERS_DIRECTORY}/grunt"
 COMPASS="${MANAGERS_DIRECTORY}/compass"
 COMPOSER="${MANAGERS_DIRECTORY}/composer"
-DOCPAD="${MANAGERS_DIRECTORY}/docpad"
-JEKYLL="${MANAGERS_DIRECTORY}/jekyll"
-RAILS="${MANAGERS_DIRECTORY}/rails"
+RAKE="${MANAGERS_DIRECTORY}/rake"
+MAKE="${MANAGERS_DIRECTORY}/make"
 
 # Ask for the administrator password upfront
 sudo -v
@@ -49,9 +48,9 @@ printf "[ 1 ] - Bower \n"
 printf "[ 2 ] - Grunt \n"
 printf "[ 3 ] - Compass \n"
 printf "[ 4 ] - Composer \n"
-printf "[ 5 ] - DocPad \n"
-printf "[ 6 ] - Jekyll \n"
-printf "[ 7 ] - Rails \n"
+printf "[ 5 ] - NPM \n"
+printf "[ 6 ] - Rake \n"
+printf "[ 7 ] - Make \n"
 printf "[ 0 ] - Exit \n"
 printf "\n"
 read -p "Enter your choice: " input
@@ -59,10 +58,12 @@ read -p "Enter your choice: " input
 if [ $input = "1" ]; then
 
     # copy files to ./src folder
+    printf "Copying files..."
     cp ${MANAGERS_DIRECTORY}/bower/* ${MANAGERS_SRC_DIRECTORY}
 
     # remove unecessary folders
-    rm -dr .* README.md install BOWER GRUNT COMPASS COMPOSER DOCPAD JEKYLL RAILS
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install GRUNT COMPASS COMPOSER NPM RAKE MAKE
 
     # Everything is ok!
     printf "Ready to rock with Bower!"
@@ -71,49 +72,95 @@ fi
 
 if [ $input = "2" ]; then
 
+    # copy files to ./src folder
+    printf "Copying files..."
+    cp ${MANAGERS_DIRECTORY}/grunt/* ${MANAGERS_SRC_DIRECTORY}
+
+    # remove unecessary folders
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install BOWER COMPASS COMPOSER NPM RAKE MAKE
+
     # Everything is ok!
-    printf "Ready to rock with Bower!"
+    printf "Ready to rock with Grunt!"
+
 fi
 
 if [ $input = "3" ]; then
-    # testing...
-    printf "Compass!"
+
+    # copy files to ./src folder
+    printf "Copying files..."
+    cp ${MANAGERS_DIRECTORY}/compass/* ${MANAGERS_SRC_DIRECTORY}
+
+    # remove unecessary folders
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install BOWER GRUNT COMPOSER NPM RAKE MAKE
+
+    # Everything is ok!
+    printf "Ready to rock with Compass!"
+
 fi
 
 if [ $input = "4" ]; then
-    # testing...
-    printf "Composer!"
+
+    # copy files to ./src folder
+    printf "Copying files..."
+    cp ${MANAGERS_DIRECTORY}/composer/* ${MANAGERS_SRC_DIRECTORY}
+
+    # remove unecessary folders
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install BOWER GRUNT COMPASS NPM RAKE MAKE
+
+    # Everything is ok!
+    printf "Ready to rock with Composer!"
+
 fi
 
 if [ $input = "5" ]; then
-    # testing...
-    printf "DocPad!"
+
+    # copy files to ./src folder
+    printf "Copying files..."
+    cp ${MANAGERS_DIRECTORY}/npm/* ${MANAGERS_SRC_DIRECTORY}
+
+    # remove unecessary folders
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install BOWER GRUNT COMPASS RAKE MAKE
+
+    # Everything is ok!
+    printf "Ready to rock with NPM!"
+
 fi
 
 if [ $input = "6" ]; then
-    # testing...
-    printf "Jekyll!"
+
+    # copy files to ./src folder
+    printf "Copying files..."
+    cp ${MANAGERS_DIRECTORY}/rake/* ${MANAGERS_SRC_DIRECTORY}
+
+    # remove unecessary folders
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install BOWER GRUNT COMPASS NPM MAKE
+
+    # Everything is ok!
+    printf "Ready to rock with Rake!"
+
 fi
 
 if [ $input = "7" ]; then
-    # testing...
-    printf "Rails!"
+
+    # copy files to ./src folder
+    printf "Copying files..."
+    cp ${MANAGERS_DIRECTORY}/make/* ${MANAGERS_SRC_DIRECTORY}
+
+    # remove unecessary folders
+    printf "Removing stuff you don't want..."
+    rm -dr .* README.md install BOWER GRUNT COMPASS NPM RAKE
+
+    # Everything is ok!
+    printf "Ready to rock with Make!"
+
 fi
 
 if [ $input = "0" ]; then
     printf "Bye bye!"
     exit
 fi
-
-
-# ====================================================
-#  TODO - TEST PROJECTS
-# ====================================================
-
-# Bower ✔
-# Grunt ✔
-# Jekyll ✔
-# Compass ✔
-# Composer
-# DocPad
-# Rails

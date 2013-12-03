@@ -1,0 +1,20 @@
+{
+  "name": "project-name",
+  "version": "0.0.0",
+  "title": "Project Name",
+  "homepage": "http://www.projectname.com",
+  "description": "Somenthing here",
+  "author": {
+    "name": "Author name",
+    "url": "http://www.authorsite.com",
+    "email": "email@domain.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/username/repository.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "load-grunt-tasks": "~0.1.0"
+  }
+}
