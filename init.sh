@@ -16,154 +16,154 @@ MAKE="./make"
 sudo -v
 
 # Show options
-echo "\n"
-echo "Select an integration option to getting started: \n"
-echo "\n"
-echo "[ 1 ] - Bower \n"
-echo "[ 2 ] - Grunt \n"
-echo "[ 3 ] - Compass \n"
-echo "[ 4 ] - Composer \n"
-echo "[ 5 ] - NPM \n"
-echo "[ 6 ] - Rake \n"
-echo "[ 7 ] - Make \n"
-echo "[ 0 ] - Exit \n"
-echo "\n"
+printf "\n"
+printf "Select an integration option to getting started: \n"
+printf "\n"
+printf "[ 1 ] - Bower \n"
+printf "[ 2 ] - Grunt \n"
+printf "[ 3 ] - Compass \n"
+printf "[ 4 ] - Composer \n"
+printf "[ 5 ] - NPM \n"
+printf "[ 6 ] - Rake \n"
+printf "[ 7 ] - Make \n"
+printf "[ 0 ] - Exit \n"
+printf "\n"
 read -p "Enter your choice: " input
 
 if [ $input = "1" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./bower/* ./src
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with Bower!"
+    printf "Ready to rock with Bower!"
 
 fi
 
 if [ $input = "2" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./grunt/* ./src/
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${BOWER} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with Grunt!"
+    printf "Ready to rock with Grunt!"
 
 fi
 
 if [ $input = "3" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./compass/* ./src/
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with Compass!"
+    printf "Ready to rock with Compass!"
 
 fi
 
 if [ $input = "4" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./composer/* ./src/
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${NPM} ${RAKE} ${MAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with Composer!"
+    printf "Ready to rock with Composer!"
 
 fi
 
 if [ $input = "5" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./npm/* ./src/
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${COMPASS} ${RAKE} ${MAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with NPM!"
+    printf "Ready to rock with NPM!"
 
 fi
 
 if [ $input = "6" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./rake/* ./src/
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${NPM} ${COMPASS} ${MAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with Rake!"
+    printf "Ready to rock with Rake!"
 
 fi
 
 if [ $input = "7" ]; then
 
     # create ./src directory
-    echo "Initializing structure..."
+    printf "Initializing structure..."
     mkdir ./src
 
     # copy files to ./src directory
-    echo "Copying files..."
+    printf "Copying files..."
     cp ./make/* ./src/
 
     # remove unecessary files
-    echo "Removing stuff you don't want..."
-    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPOSER} ${NPM} ${COMPASS} ${RAKE}
+    printf "Removing stuff you don't want..."
+    rm -rf .* README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
 
     # All done!
-    echo "Ready to rock with Make!"
+    printf "Ready to rock with Make!"
 
 fi
 
 if [ $input = "0" ]; then
-    echo "Bye bye!"
+    printf "Bye bye!"
     exit
 fi
