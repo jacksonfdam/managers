@@ -6,13 +6,13 @@ Here you'll find some pre-defined files that I use in my projects for integratio
 
 ## What's included
 
-[Bower](/bower)
-[Grunt](/grunt)
-[Compass](/compass)
-[Composer](/composer)
-[NPM](/npm)
-[Rake](/rake)
-[Make](/make)
+- [Bower](/bower)
+- [Grunt](/grunt)
+- [Compass](/compass)
+- [Composer](/composer)
+- [NPM](/npm)
+- [Rake](/rake)
+- [Make](/make)
 
 
 ## TODO
