@@ -12,5 +12,14 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/vitorbritto/managers.git"
+  },
+  "script": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "commander": "~2.1.0",
+    "shelljs": "~0.2.6",
+    "nodemon": "~1.0.1",
+    "cli-color": "~0.2.2"
   }
 }
