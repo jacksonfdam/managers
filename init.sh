@@ -107,7 +107,7 @@ if [ $input = "5" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./node/* ./
+    cp -rf ./node/* ./
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"

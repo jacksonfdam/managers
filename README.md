@@ -11,7 +11,7 @@ Here you'll find some pre-defined files that I use in my projects for integratio
 ```bash
 git clone git://github.com/vitorbritto/managers.git projectname
 cd projectname
-./init.sh
+bash init.sh
 ```
 
 ## Manager files for:
