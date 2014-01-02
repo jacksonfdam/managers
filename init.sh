@@ -8,7 +8,7 @@ BOWER="./bower"
 GRUNT="./grunt"
 COMPASS="./compass"
 COMPOSER="./composer"
-NPM="./npm"
+NODE="./node"
 RAKE="./rake"
 MAKE="./make"
 
@@ -23,7 +23,7 @@ printf "[ 1 ] - Bower \n"
 printf "[ 2 ] - Grunt \n"
 printf "[ 3 ] - Compass \n"
 printf "[ 4 ] - Composer \n"
-printf "[ 5 ] - NPM \n"
+printf "[ 5 ] - Node \n"
 printf "[ 6 ] - Rake \n"
 printf "[ 7 ] - Make \n"
 printf "[ 0 ] - Exit \n"
@@ -42,7 +42,7 @@ if [ $input = "1" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Bower!\n"
@@ -61,7 +61,7 @@ if [ $input = "2" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Grunt!\n"
@@ -80,7 +80,7 @@ if [ $input = "3" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Compass!\n"
@@ -99,7 +99,7 @@ if [ $input = "4" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Composer!\n"
@@ -118,29 +118,25 @@ if [ $input = "5" ]; then
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with NPM!\n"
+    printf "Ready to rock with Node!\n"
 
 fi
 
 if [ $input = "6" ]; then
 
-    # create ./src directory
-    printf "Initializing structure...\n"
-    mkdir ./src
-
     # copy files to ./src directory
     printf "Copying files...\n"
-    cp ./rake/* ./src/
+    cp ./node/* ./
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
-    printf "Ready to rock with Rake!\n"
+    printf "Ready to rock with NPM!\n"
 
 fi
 
@@ -152,11 +148,30 @@ if [ $input = "7" ]; then
 
     # copy files to ./src directory
     printf "Copying files...\n"
+    cp ./rake/* ./src/
+
+    # remove unecessary files
+    printf "Removing stuff you don't want...\n"
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
+
+    # All done!
+    printf "Ready to rock with Rake!\n"
+
+fi
+
+if [ $input = "8" ]; then
+
+    # create ./src directory
+    printf "Initializing structure...\n"
+    mkdir ./src
+
+    # copy files to ./src directory
+    printf "Copying files...\n"
     cp ./make/* ./src/
 
     # remove unecessary files
     printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NPM} ${RAKE} ${MAKE}
+    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
 
     # All done!
     printf "Ready to rock with Make!\n"

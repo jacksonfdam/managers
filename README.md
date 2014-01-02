@@ -20,9 +20,10 @@ cd projectname
 - [Grunt](/grunt)
 - [Compass](/compass)
 - [Composer](/composer)
-- [NPM](/npm)
+- [Node](/node)
 - [Rake](/rake)
 - [Make](/make)
+
 
 
 ## TODO
@@ -30,3 +31,4 @@ cd projectname
 * Guard
 * Phing
 * Component
+* Npm
