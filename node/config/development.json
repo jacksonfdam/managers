@@ -4,6 +4,17 @@
         "host" : "127.0.0.1"
     },
     "paths": {
-        "dist": "./_build"
+        "src": {
+            "main": "",
+            "css": "assets/styl/",
+            "js": "assets/js/",
+            "img": "assets/images/"
+        },
+        "out": {
+            "main": "_build",
+            "css": "_build/assets/css/",
+            "js": "_build/assets/js/",
+            "img": "_build/assets/images/"
+        }
     }
 }

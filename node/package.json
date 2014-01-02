@@ -6,20 +6,16 @@
   "description": "Some description.",
   "author": {
     "name": "Vitor Britto",
-    "url": "http://www.vitorbritto.com",
+    "url": "http://www.vitorbritto.com.br",
     "email": "email@domain.com"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/vitorbritto/managers.git"
   },
-  "script": {
-    "start": "nodemon app.js"
-  },
   "dependencies": {
     "commander": "~2.1.0",
     "shelljs": "~0.2.6",
-    "nodemon": "~1.0.1",
     "cli-color": "~0.2.2"
   }
 }

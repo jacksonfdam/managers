@@ -3,7 +3,6 @@ var config = require('./config');
 
 // Modules
 var cli   = require('commander'),
-    path  = require('path'),
     sh    = require('shelljs'),
     color = require('cli-color');
 
@@ -17,28 +16,21 @@ var error    = color.red.bold,
 
 // CLI commands
 cli
-    .command('deploy')
+    .command('init')
     .description('Initialize Build Tasks.')
     .action(build);
 
 cli.parse(process.argv);
 
-cli
-    .command('help')
-    .description('Show help.')
-    .action(help);
-
-cli.parse(process.argv);
-
 // Compile Sass Files
 function initCompile(){
-    if (!sh.which('compass')) {
-        sh.echo(error('✖ This build script requires "compass" to be installed globally.'));
-        sh.echo(warn('Install: gem compass'));
+    if (!sh.which('stylus')) {
+        sh.echo(error('✖ This build script requires "stylus" to be installed globally.'));
+        sh.echo(warn('Install: npm install stylus -g'));
         exit(1);
     }
     sh.echo(notice('! Compiling files...'));
-    sh.exec('compass compile .');
+    sh.exec('stylus -c <' + config.paths.src.css + 'style.styl> ' + config.paths.out.css + 'style.css');
 }
 
 // Validate Scripts
@@ -49,7 +41,7 @@ function initValidate() {
         exit(1);
     }
     sh.echo(notice('! Validating scripts...'));
-    sh.exec('jshint main.js');
+    sh.exec('jshint ' + config.paths.src.js + 'main.js');
 }
 
 // Minify and Concatenate Scripts
@@ -60,23 +52,19 @@ function initMinify() {
         exit(1);
     }
     sh.echo(notice('! Minifying scripts...'));
-    sh.exec('cat main.js | uglifyjs -o main.min.js');
+    sh.exec('cat '+ config.paths.src.js +' main.js | uglifyjs -o '+ config.paths.out.js +'main.min.js');
 }
 
 // Clean Old Files
 function initClean(){
     sh.echo(notice('! Removing old files...'));
-    sh.rm('-rf', config.paths.dist);
+    sh.rm('-rf', [config.paths.out.main, config.paths.out.css, config.paths.out.js, config.paths.out.img]);
 }
 
 // Create Structure
 function initScaffolding() {
-    var assetsDir = path.join(config.paths.dist, 'assets');
-    var tempDir   = path.join(config.paths.dist, 'temp');
-
     sh.echo(notice('! Creating Structure...'));
-    sh.mkdir('-p', assetsDir);
-    sh.mkdir('-p', tempDir);
+    sh.mkdir('-p', [config.paths.out.main, config.paths.out.css, config.paths.out.js, config.paths.out.img]);
 }
 
 
@@ -92,8 +80,4 @@ function build(){
     initMinify();
 
     sh.echo(success('✔ All Done!'));
-}
-
-function help() {
-
 }
