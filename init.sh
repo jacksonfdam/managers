@@ -12,9 +12,6 @@ NODE="./node"
 RAKE="./rake"
 MAKE="./make"
 
-# Ask for the administrator password upfront
-sudo -v
-
 # Show options
 printf "\n"
 printf "Select an integration option to getting started: \n"
@@ -108,25 +105,6 @@ fi
 
 if [ $input = "5" ]; then
 
-    # create ./src directory
-    printf "Initializing structure...\n"
-    mkdir ./src
-
-    # copy files to ./src directory
-    printf "Copying files...\n"
-    cp ./npm/* ./src/
-
-    # remove unecessary files
-    printf "Removing stuff you don't want...\n"
-    rm -rf .git README.md init.sh ${BOWER} ${GRUNT} ${COMPASS} ${COMPOSER} ${NODE} ${RAKE} ${MAKE}
-
-    # All done!
-    printf "Ready to rock with Node!\n"
-
-fi
-
-if [ $input = "6" ]; then
-
     # copy files to ./src directory
     printf "Copying files...\n"
     cp ./node/* ./
@@ -140,7 +118,7 @@ if [ $input = "6" ]; then
 
 fi
 
-if [ $input = "7" ]; then
+if [ $input = "6" ]; then
 
     # create ./src directory
     printf "Initializing structure...\n"
@@ -159,7 +137,7 @@ if [ $input = "7" ]; then
 
 fi
 
-if [ $input = "8" ]; then
+if [ $input = "7" ]; then
 
     # create ./src directory
     printf "Initializing structure...\n"
