@@ -1,0 +1,43 @@
+{
+    "name": "application-name",
+    "version": "0.1.0",
+    "title": "Project Name",
+    "description": "Project description goes here",
+    "private": true,
+    "author": {
+        "name": "Vitor Britto",
+        "url": "http://vitorbritto.com.br",
+        "email": "code@vitorbritto.com.br"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "licenses": {
+        "type": "",
+        "url": ""
+    },
+    "scripts": {
+        "build-js": "browserify browser/main.js | uglifyjs -mc > static/bundle.js",
+        "build-css": "cat static/pages/*.css tabs/*/*.css",
+        "build": "npm run build-js && npm run build-css",
+        "watch-js": "watchify browser/main.js -o static/bundle.js -dv",
+        "watch-css": "catw static/pages/*.css tabs/*/*.css -o static/bundle.css -v",
+        "watch": "npm run watch-js & npm run watch-css",
+        "start": "node server.js",
+        "test": "tap test/*.js"
+    },
+    "dependencies": {
+        "browserify": "~2.35.2",
+        "uglifyjs": "~2.3.6"
+    },
+    "devDependencies": {
+        "watchify": "~0.1.0",
+        "catw": "~0.0.1",
+        "tap": "~0.4.4"
+    }
+}

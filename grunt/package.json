@@ -1,20 +1,32 @@
 {
-  "name": "project-name",
-  "version": "0.0.0",
-  "title": "Project Name",
-  "homepage": "http://www.projectname.com",
-  "description": "Somenthing here",
-  "author": {
-    "name": "Author name",
-    "url": "http://www.authorsite.com",
-    "email": "email@domain.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/username/repository.git"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "load-grunt-tasks": "~0.1.0"
-  }
+    "name": "application-name",
+    "version": "0.1.0",
+    "title": "Project Name",
+    "description": "Project description goes here",
+    "private": true,
+    "author": {
+        "name": "Vitor Britto",
+        "url": "http://vitorbritto.com.br",
+        "email": "code@vitorbritto.com.br"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "bugs": {
+        "url": ""
+    },
+    "scripts": {
+        "start": ""
+    },
+    "licenses": {
+        "type": "",
+        "url": ""
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "load-grunt-tasks": "~0.1.0"
+    }
 }
