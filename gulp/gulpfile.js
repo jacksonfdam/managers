@@ -2,10 +2,10 @@
 var gulp = require('gulp');
 
 // Include Plugins
-var jshint = require('gulp-jshint');
-var stylus = require('gulp-styl');
-var jade   = require('gulp-jade');
-var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint'),
+    stylus = require('gulp-styl'),
+    jade   = require('gulp-jade'),
+    uglify = require('gulp-uglify');
 
 // Include Paths
 var paths = {

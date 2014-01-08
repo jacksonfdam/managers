@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
 
-    'use strict';
+    "use strict";
 
     // Load all grunt tasks
     // --------------------------
-    require('load-grunt-tasks')(grunt);
+    require("load-grunt-tasks")(grunt);
 
 
     // Init Config
@@ -14,19 +14,17 @@ module.exports = function(grunt) {
         // General configs goes here
 
         // Metadata
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: grunt.file.readJSON("package.json"),
         banner:
-        '\n' +
-        '/*\n' +
-        ' * -------------------------------------------------------\n' +
-        ' * Project: <%= pkg.title %>\n' +
-        ' * Version: <%= pkg.version %>\n' +
-        ' * Author:  <%= pkg.author.name %> (<%= pkg.author.email %>)\n' +
-        ' *\n' +
-        ' * Copyright (c) <%= grunt.template.today(\'yyyy\') %> <%= pkg.author.name %>\n' +
-        ' * -------------------------------------------------------\n' +
-        ' */\n' +
-        '\n',
+        "/*" +
+        " * -------------------------------------------------------\n" +
+        " * Project: <%= pkg.title %>\n" +
+        " * Version: <%= pkg.version %>\n" +
+        " * Author:  <%= pkg.author.name %> (<%= pkg.author.email %>)\n" +
+        " *\n" +
+        " * Copyright (c) <%= grunt.template.today(\"yyyy\") %> <%= pkg.title %>\n" +
+        " * -------------------------------------------------------\n" +
+        " */\n",
 
         // Tasks goes here
 
@@ -37,7 +35,7 @@ module.exports = function(grunt) {
 
     // Register tasks
     // --------------------------
-    grunt.registerTask('default', [ ]);
-    grunt.registerTask('build', [ ]);
+    grunt.registerTask("default", [ ]);
+    grunt.registerTask("build", [ ]);
 
 };
