@@ -7,16 +7,21 @@ task default: [:watch]
 
 task :build do
   build_sass
-  # build_xxxxxxxxxxxxx
+  # build_coffeescript
+  # build_javascript
+  # build_template
 end
 
 task :watch do
     build_sass
-    # build_xxxxxxxxxxxxx
-
+    # build_coffeescript
+    # build_javascript
+    # build_template
     pids = [
+        # spawn("coffee -w"),
+        # spawn("uglify command here"),
+        # spawn("haml command here"),
         spawn("compass watch")
-        # include new tasks here
     ]
 
     trap "INT" do
@@ -37,8 +42,15 @@ def build_sass
   system("compass compile")
 end
 
-# def build_xxxxxxxxxxxxxxxxx
-#   system("cmd here")
+# def build_coffeescript
+#   system("coffee -co ../public/assets/js ../assets/coffee")
 # end
 
+# def build_javascript
+#   system("")
+# end
+
+# def build_template
+#   system("")
+# end
 

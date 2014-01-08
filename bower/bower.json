@@ -1,23 +1,23 @@
 {
-  "name": "bower",
-  "version": "0.1.0",
-  "author": {
-    "name": "Vitor Britto",
-    "url": "http://vitorbritto.com.br",
-    "email": "code@vitorbritto.com.br"
-  },
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "~1.10.2",
-    "modernizr": "~2.6.2"
-  }
+    "name": "bower",
+    "version": "0.1.0",
+    "author": {
+        "name": "Vitor Britto",
+        "url": "http://vitorbritto.com.br",
+        "email": "code@vitorbritto.com.br"
+    },
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "~1.10.2",
+        "modernizr": "~2.6.2"
+    }
 }

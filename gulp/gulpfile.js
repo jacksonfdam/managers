@@ -17,9 +17,9 @@ var paths = {
     },
     dist: {
         views: "./public/",
-        styles: "./public/css/",
-        scripts: "./public/js/",
-        images: "./public/images/"
+        styles: "./public/assets/css/",
+        scripts: "./public/assets/js/",
+        images: "./public/assets/images/"
     }
 };
 

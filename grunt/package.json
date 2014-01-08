@@ -9,7 +9,12 @@
         "url": "http://vitorbritto.com.br",
         "email": "code@vitorbritto.com.br"
     },
-    "keywords": [],
+    "keywords": [
+        "gruntfile",
+        "grunt",
+        "tasks",
+        "automation"
+    ],
     "repository": {
         "type": "git",
         "url": ""
@@ -26,7 +31,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-        "grunt": "~0.4.1",
+        "grunt": "~0.4.2",
         "load-grunt-tasks": "~0.1.0"
     }
 }

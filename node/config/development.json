@@ -5,16 +5,16 @@
     },
     "paths": {
         "src": {
-            "main": "",
+            "main": "./",
             "css": "assets/styl/",
             "js": "assets/js/",
             "img": "assets/images/"
         },
         "out": {
-            "main": "_build",
-            "css": "_build/assets/css/",
-            "js": "_build/assets/js/",
-            "img": "_build/assets/images/"
+            "main": "./public",
+            "css": "./public/assets/css/",
+            "js": "./public/assets/js/",
+            "img": "./public/assets/images/"
         }
     }
 }
