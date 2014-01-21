@@ -24,7 +24,7 @@ cd projectname
 - [Compass](/compass)
 - [Composer](/composer)
 - [Node](/node)
-- [Node](/npm)
+- [NPM](/npm)
 - [Rake](/rake)
 - [Make](/make)
 - [Guard](/guard)
