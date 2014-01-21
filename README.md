@@ -2,7 +2,7 @@
 
 Quickly integrate some tools in your projects.
 
-> See the TODO List [here](https://github.com/vitorbritto/managers/issues/1). 
+> Work in progress... see more about [here](https://github.com/vitorbritto/managers/issues/1). 
 
 ## Getting Started
 
