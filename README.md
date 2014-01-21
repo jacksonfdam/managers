@@ -4,11 +4,15 @@ Quickly integrate some tools in your projects.
 
 ## Getting Started
 
+1 - Clone this repository and execute
+
 ```bash
 git clone git://github.com/vitorbritto/managers.git projectname
 cd projectname
 ./init.sh
 ```
+
+2 - Profit!
 
 ## Manager files for:
 
