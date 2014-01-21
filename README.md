@@ -2,6 +2,8 @@
 
 Quickly integrate some tools in your projects.
 
+> See the TODO List [here](https://github.com/vitorbritto/managers/issues/1). 
+
 ## Getting Started
 
 1 - Clone this repository and execute
