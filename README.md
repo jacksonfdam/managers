@@ -1,8 +1,6 @@
-# Welcome
+# Managers
 
-Here you'll find some pre-defined files that I use in my projects for integration with some modern tools.
-
-> Note: these files works well in my workflow, the way I feel most suited and comfortable. Is up to you (me) if you want to run this as a file or copy paste at your leisure. Feel free to ask or leave a message.
+Quickly integrate some tools in your projects.
 
 ## Getting Started
 
@@ -24,10 +22,3 @@ cd projectname
 - [Rake](/rake)
 - [Make](/make)
 - [Guard](/guard)
-
-
-
-## TODO
-
-* Guard
-* Composer
